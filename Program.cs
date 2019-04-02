@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,27 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hallo1");
+            try
+            {
+                var logger = new LoggingService();
+            }
+            catch (UnauthorizedAccessException unae)
+            {
+                Console.WriteLine(unae.Message);
+            }
+            catch (Exception)
+            {
+
+                throw new DemoException("test");
+            }
+        }
+    }
+
+    public class DemoException:Exception
+    {
+        public DemoException(string msg)
+        {
+
         }
     }
 }
