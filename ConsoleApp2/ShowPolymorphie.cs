@@ -18,9 +18,9 @@ namespace ConsoleApp2
             return (int)(a + b + c);
         }
 
-        public double Sum(double a, double b, double c = 0)
-        {
+        //public double Sum(double a, double b, double c = 0)
+        //{
 
-        }
+        //}
     }
 }

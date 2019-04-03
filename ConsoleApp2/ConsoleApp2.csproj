@@ -46,6 +46,7 @@
     <Compile Include="IParent2.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QandD.cs" />
     <Compile Include="ShowKapselung.cs" />
     <Compile Include="ShowPolymorphie.cs" />
   </ItemGroup>
